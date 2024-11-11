@@ -23,14 +23,9 @@ struct DropGameView: View
     
     var body: some View
     {
-        VStack 
-        {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        SpriteView(scene: simpleGameScene)
+            .frame(width: width, height: height)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
