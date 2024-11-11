@@ -94,6 +94,8 @@
 		554F93B02CE29D23007E9367 /* DropGame */ = {
 			isa = PBXGroup;
 			children = (
+				554F93E02CE2A2FB007E9367 /* Scenes */,
+				554F93DF2CE2A2F5007E9367 /* Particles */,
 				554F93DB2CE2A0CC007E9367 /* Resources */,
 				554F93DC2CE2A0D4007E9367 /* ViewController */,
 				554F93B72CE29D23007E9367 /* Preview Content */,
@@ -141,6 +143,20 @@
 				554F93B32CE29D23007E9367 /* DropGameView.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		554F93DF2CE2A2F5007E9367 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		554F93E02CE2A2FB007E9367 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
