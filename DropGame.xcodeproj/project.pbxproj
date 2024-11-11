@@ -14,6 +14,7 @@
 		554F93C32CE29D23007E9367 /* DropGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93C22CE29D23007E9367 /* DropGameTests.swift */; };
 		554F93CD2CE29D23007E9367 /* DropGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93CC2CE29D23007E9367 /* DropGameUITests.swift */; };
 		554F93CF2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93CE2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift */; };
+		554F93E22CE2A363007E9367 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93E12CE2A363007E9367 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		554F93C82CE29D23007E9367 /* DropGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F93CC2CE29D23007E9367 /* DropGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGameUITests.swift; sourceTree = "<group>"; };
 		554F93CE2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		554F93E12CE2A363007E9367 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		554F93E02CE2A2FB007E9367 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				554F93E12CE2A363007E9367 /* GameScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554F93E22CE2A363007E9367 /* GameScene.swift in Sources */,
 				554F93B42CE29D23007E9367 /* DropGameView.swift in Sources */,
 				554F93B22CE29D23007E9367 /* DropGameApp.swift in Sources */,
 			);

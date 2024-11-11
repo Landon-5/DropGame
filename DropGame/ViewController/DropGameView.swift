@@ -23,7 +23,7 @@ struct DropGameView: View
     }
 }
 
-#Preview ()
+#Preview ("View of Drop Game")
 {
     DropGameView()
 }
