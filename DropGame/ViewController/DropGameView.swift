@@ -10,7 +10,10 @@ import SpriteKit
 
 struct DropGameView: View 
 {
-    var body: some View 
+    private let width : CGFloat = 300
+    private let height : CGFloat = 500
+    
+    var body: some View
     {
         VStack 
         {
