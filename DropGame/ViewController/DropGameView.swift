@@ -13,6 +13,14 @@ struct DropGameView: View
     private let width : CGFloat = 300
     private let height : CGFloat = 500
     
+    private var simpleGameScene : GameScene
+    {
+        let scene = GameScene()
+        scene.size = CGSize(width: width, height: height)
+        scene.scaleMode = .fill
+        return scene
+    }
+    
     var body: some View
     {
         VStack 
