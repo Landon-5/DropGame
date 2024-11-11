@@ -23,9 +23,19 @@ struct DropGameView: View
     
     var body: some View
     {
-        SpriteView(scene: simpleGameScene)
-            .frame(width: width, height: height)
-            .edgesIgnoringSafeArea(.all)
+        NavigationStack
+        {
+            VStack
+            {
+                SpriteView(scene: simpleGameScene)
+                    .frame(width: width, height: height)
+                    .edgesIgnoringSafeArea(.all)
+                Section("Documents")
+                {
+                    
+                }
+            }
+        }
     }
 }
 
