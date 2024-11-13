@@ -69,4 +69,12 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             annihilate(deadNode: nodeOne)
         }
     }
+    
+    func didBegin(_ contact : SKPhysicsContact) -> Void
+    {
+        guard let first = contact.bodyA.node else { return }
+        guard let second = contact.bodyB.node else { return }
+        
+        collisionBetween(first, and: second)
+    }
 }
