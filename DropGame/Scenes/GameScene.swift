@@ -26,5 +26,11 @@ class GameScene : SKScene
         let width = Int(arc4random() % 50)
         let height = Int(arc4random() % 50)
         let location = touch.location(in: self)
+        
+        let node : SKSpriteNode
+        node = SKSpriteNode(color: currentColor, size: CGSize(width: width, height: height))
+        node.position = location
+        
+        addChild(node)
     }
 }
