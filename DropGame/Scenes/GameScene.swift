@@ -31,6 +31,8 @@ class GameScene : SKScene
         node = SKSpriteNode(color: currentColor, size: CGSize(width: width, height: height))
         node.position = location
         
+        node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: width, height: height))
+        
         addChild(node)
     }
 }
