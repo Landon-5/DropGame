@@ -10,5 +10,10 @@ import SpriteKit
 
 class GameScene : SKScene
 {
+    //MARK: -- Required (Overriden) Methods
     
+    override func didMove(to view : SKView) -> Void
+    {
+        physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
+    }
 }

@@ -10,6 +10,8 @@ import SpriteKit
 
 struct DropGameView: View 
 {
+    @State private var canShowDocuments : Bool = false
+    
     private let width : CGFloat = 300
     private let height : CGFloat = 500
     
@@ -30,7 +32,7 @@ struct DropGameView: View
                 SpriteView(scene: simpleGameScene)
                     .frame(width: width, height: height)
                     .edgesIgnoringSafeArea(.all)
-                Section("Documents")
+                Section("Documents", isExpanded: $canShowDocuments)
                 {
                     
                 }
