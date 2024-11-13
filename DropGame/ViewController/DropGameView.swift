@@ -20,6 +20,7 @@ struct DropGameView: View
         let scene = GameScene()
         scene.size = CGSize(width: width, height: height)
         scene.scaleMode = .fill
+        
         return scene
     }
     
