@@ -58,6 +58,15 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     private func annihilate(deadNode: SKNode) -> Void
     {
-        
+        deadNode.removeFromParent()
+    }
+    
+    private func collisionBetween(_ nodeOne : SKNode, and nodeTwo : SKNode)
+    {
+        if(nodeOne.physicsBody?.contactTestBitMask == nodeTwo.physicsBody?.contactTestBitMask)
+        {
+            annihilate(deadNode: nodeOne)
+            annihilate(deadNode: nodeOne)
+        }
     }
 }
