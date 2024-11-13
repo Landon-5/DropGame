@@ -8,8 +8,12 @@
 import Foundation
 import SpriteKit
 
-class GameScene : SKScene
+class GameScene : SKScene, SKPhysicsContactDelegate
 {
+    //MARK: -- Data Members
+    
+    
+    
     //MARK: -- Required (Overriden) Methods
     
     override func didMove(to view : SKView) -> Void
@@ -22,7 +26,7 @@ class GameScene : SKScene
         guard let touch = touches.first
         else { return }
         
-        let currentColor = UIColor.cyan
+        let currentColor = assignColorAndBitmask()
         let width = Int(arc4random() % 50)
         let height = Int(arc4random() % 50)
         let location = touch.location(in: self)
@@ -40,9 +44,13 @@ class GameScene : SKScene
     
     private func assignColorAndBitmask() -> UIColor
     {
-        let colors : [UIColor] = [.black, .cyan, .green, .yellow, .red, .orange, .magenta, .brown]
+        let colors : [UIColor] = [.black, .darkGray, .red, .systemPink, .blue, .systemIndigo, .purple]
         let randomIndex = Int(arc4random()) % colors.count
         
         return colors[randomIndex]
     }
+    
+    //MARK: -- Collision Handling Methods
+    
+    
 }
