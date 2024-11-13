@@ -12,13 +12,14 @@ class GameScene : SKScene, SKPhysicsContactDelegate
 {
     //MARK: -- Data Members
     
-    
+    private var colorMask : Int = 0b0000
     
     //MARK: -- Required (Overriden) Methods
     
     override func didMove(to view : SKView) -> Void
     {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
+        physicsWorld.contactDelegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event : UIEvent?) -> Void
