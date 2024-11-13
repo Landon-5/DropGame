@@ -56,5 +56,8 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     //MARK: -- Collision Handling Methods
     
-    
+    private func annihilate(deadNode: SKNode) -> Void
+    {
+        
+    }
 }
