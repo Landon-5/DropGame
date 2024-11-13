@@ -37,6 +37,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         node.position = location
         
         node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: width, height: height))
+        node.physicsBody?.contactTestBitMask = UInt32(colorMask)
         
         addChild(node)
     }
@@ -47,6 +48,8 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     {
         let colors : [UIColor] = [.black, .darkGray, .red, .systemPink, .blue, .systemIndigo, .purple]
         let randomIndex = Int(arc4random()) % colors.count
+        
+        colorMask = randomIndex + 1
         
         return colors[randomIndex]
     }
