@@ -14,6 +14,16 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     private var colorMask : Int = 0b0000
     
+    private var score : Int = -0
+    {
+        didSet
+        {
+            scoreNode.text = "Current Score: \(score)"
+        }
+    }
+    
+    private let scoreNode : SKLabelNode = SKLabelNode(fontNamed: "Copperplate-Bold")
+    
     //MARK: -- Required (Overriden) Methods
     
     override func didMove(to view : SKView) -> Void
