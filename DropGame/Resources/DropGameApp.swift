@@ -8,9 +8,12 @@
 import SwiftUI
 
 @main
-struct DropGameApp: App {
-    var body: some Scene {
-        WindowGroup {
+struct DropGameApp: App 
+{
+    var body: some Scene 
+    {
+        WindowGroup 
+        {
             DropGameView()
         }
     }
