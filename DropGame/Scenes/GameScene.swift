@@ -16,4 +16,9 @@ class GameScene : SKScene
     {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event : UIEvent?) -> Void
+    {
+        
+    }
 }
