@@ -19,6 +19,12 @@ class GameScene : SKScene
     
     override func touchesBegan(_ touches: Set<UITouch>, with event : UIEvent?) -> Void
     {
+        guard let touch = touches.first
+        else { return }
         
+        let currentColor = UIColor.cyan
+        let width = Int(arc4random() % 50)
+        let height = Int(arc4random() % 50)
+        let location = touch.location(in: self)
     }
 }
