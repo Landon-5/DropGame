@@ -66,6 +66,8 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     //MARK: -- Other methods
     
+    /// Assigns a random color to the blocks
+    /// - Returns: This returns a UIColor
     private func assignColorAndBitmask() -> UIColor
     {
         let colors : [UIColor] = [.black, .darkGray, .red, .systemPink, .blue, .systemIndigo, .purple]
@@ -78,6 +80,9 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     //MARK: -- Collision Handling Methods
     
+    /// This func adds 0.5 to the score every time it is run and it also removes a node
+    /// - Parameter deadNode: A node of type SKNode that gets removed when this func is called
+    /// - Returns: Nothing, this func returns void
     private func annihilate(deadNode: SKNode) -> Void
     {
         score += 0.5
