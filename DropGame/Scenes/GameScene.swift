@@ -26,6 +26,11 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     //MARK: -- Required (Overriden) Methods
     
+    
+    /// This method fires when the GameScene is loaded. We use this similar to an init/constructor since it is called when the screen is moved to (initialized)
+    ///
+    /// - Parameter view: The current SKScene AKA the GameScene
+    /// - Returns: Nothing, this is a void method.
     override func didMove(to view : SKView) -> Void
     {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
