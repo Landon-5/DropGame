@@ -19,6 +19,7 @@
 		55E5EFCA2CED1756004E667C /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFC92CED1756004E667C /* SparkParticle.sks */; };
 		55E5EFCF2CED1A76004E667C /* drop bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFCE2CED1A76004E667C /* drop bass.wav */; };
 		55E5EFD12CED1A81004E667C /* Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFD02CED1A81004E667C /* Go.mp3 */; };
+		55E5EFD32CED2143004E667C /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5EFD22CED2143004E667C /* EndGameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		55E5EFC92CED1756004E667C /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
 		55E5EFCE2CED1A76004E667C /* drop bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drop bass.wav"; sourceTree = "<group>"; };
 		55E5EFD02CED1A81004E667C /* Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Go.mp3; sourceTree = "<group>"; };
+		55E5EFD22CED2143004E667C /* EndGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				554F93E12CE2A363007E9367 /* GameScene.swift */,
+				55E5EFD22CED2143004E667C /* EndGameScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E5EFD32CED2143004E667C /* EndGameScene.swift in Sources */,
 				554F93E22CE2A363007E9367 /* GameScene.swift in Sources */,
 				554F93B42CE29D23007E9367 /* DropGameView.swift in Sources */,
 				554F93B22CE29D23007E9367 /* DropGameApp.swift in Sources */,
