@@ -86,6 +86,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     private func annihilate(deadNode: SKNode) -> Void
     {
         score += 0.5
+        explosionEffect(at: deadNode.position)
         deadNode.removeFromParent()
     }
     
@@ -104,5 +105,22 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         guard let second = contact.bodyB.node else { return }
         
         collisionBetween(first, and: second)
+    }
+    
+    //MARK: - Special Effects
+    
+    private func explosionEffect (at location : CGPoint) -> Void
+    {
+        if let explosion = SKEmitterNode(fileNamed: "SparkParticle")
+        {
+            explosion.position = location
+            addChild(explosion)
+            
+            let waitTime = SKAction.wait(forDuration: 5)
+            let removeExplosion = SKAction.removeFromParent()
+            let explosiveSequence = SKAction.sequence([waitTime, removeExplosion])
+            
+            explosion.run(explosiveSequence)
+        }
     }
 }
