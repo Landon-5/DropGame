@@ -56,4 +56,15 @@ class EndGameScene : SKScene
         
         self.view?.presentScene(restartScene, transition: transition)
     }
+    
+    //MARK: - Pinch Gesture Recognizer
+    
+    @objc
+    private func handlePinch(recognizer : UIPinchGestureRecognizer) -> Void
+    {
+        if (recognizer.state == .ended)
+        {
+            restart()
+        }
+    }
 }
