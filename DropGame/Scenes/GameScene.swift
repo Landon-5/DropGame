@@ -106,7 +106,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         explosionEffect(at: deadNode.position)
         deadNode.removeFromParent()
         
-        if (score > 100)
+        if (score >= 100)
         {
             endGame()
         }
