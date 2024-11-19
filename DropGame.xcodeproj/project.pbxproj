@@ -15,6 +15,8 @@
 		554F93CD2CE29D23007E9367 /* DropGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93CC2CE29D23007E9367 /* DropGameUITests.swift */; };
 		554F93CF2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93CE2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift */; };
 		554F93E22CE2A363007E9367 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93E12CE2A363007E9367 /* GameScene.swift */; };
+		555384682CED14C500E23A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555384662CED14C500E23A62 /* Assets.xcassets */; };
+		55E5EFCA2CED1756004E667C /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFC92CED1756004E667C /* SparkParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		554F93CC2CE29D23007E9367 /* DropGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGameUITests.swift; sourceTree = "<group>"; };
 		554F93CE2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		554F93E12CE2A363007E9367 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		555384662CED14C500E23A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55E5EFC92CED1756004E667C /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		554F93DF2CE2A2F5007E9367 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
+				55E5EFC92CED1756004E667C /* SparkParticle.sks */,
+				555384662CED14C500E23A62 /* Assets.xcassets */,
 			);
 			path = Particles;
 			sourceTree = "<group>";
@@ -267,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				554F93B92CE29D23007E9367 /* Preview Assets.xcassets in Resources */,
+				55E5EFCA2CED1756004E667C /* SparkParticle.sks in Resources */,
+				555384682CED14C500E23A62 /* Assets.xcassets in Resources */,
 				554F93B62CE29D23007E9367 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
