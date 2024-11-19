@@ -17,6 +17,8 @@
 		554F93E22CE2A363007E9367 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93E12CE2A363007E9367 /* GameScene.swift */; };
 		555384682CED14C500E23A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555384662CED14C500E23A62 /* Assets.xcassets */; };
 		55E5EFCA2CED1756004E667C /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFC92CED1756004E667C /* SparkParticle.sks */; };
+		55E5EFCF2CED1A76004E667C /* drop bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFCE2CED1A76004E667C /* drop bass.wav */; };
+		55E5EFD12CED1A81004E667C /* Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFD02CED1A81004E667C /* Go.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		554F93E12CE2A363007E9367 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		555384662CED14C500E23A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55E5EFC92CED1756004E667C /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
+		55E5EFCE2CED1A76004E667C /* drop bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drop bass.wav"; sourceTree = "<group>"; };
+		55E5EFD02CED1A81004E667C /* Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Go.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		554F93DB2CE2A0CC007E9367 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				55E5EFCB2CED1A4A004E667C /* Sounds */,
 				554F93B12CE29D23007E9367 /* DropGameApp.swift */,
 				554F93B52CE29D23007E9367 /* Assets.xcassets */,
 			);
@@ -166,6 +171,31 @@
 				554F93E12CE2A363007E9367 /* GameScene.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		55E5EFCB2CED1A4A004E667C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				55E5EFCD2CED1A60004E667C /* Long */,
+				55E5EFCC2CED1A57004E667C /* Short */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		55E5EFCC2CED1A57004E667C /* Short */ = {
+			isa = PBXGroup;
+			children = (
+				55E5EFCE2CED1A76004E667C /* drop bass.wav */,
+			);
+			path = Short;
+			sourceTree = "<group>";
+		};
+		55E5EFCD2CED1A60004E667C /* Long */ = {
+			isa = PBXGroup;
+			children = (
+				55E5EFD02CED1A81004E667C /* Go.mp3 */,
+			);
+			path = Long;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,10 +302,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E5EFD12CED1A81004E667C /* Go.mp3 in Resources */,
 				554F93B92CE29D23007E9367 /* Preview Assets.xcassets in Resources */,
 				55E5EFCA2CED1756004E667C /* SparkParticle.sks in Resources */,
 				555384682CED14C500E23A62 /* Assets.xcassets in Resources */,
 				554F93B62CE29D23007E9367 /* Assets.xcassets in Resources */,
+				55E5EFCF2CED1A76004E667C /* drop bass.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
