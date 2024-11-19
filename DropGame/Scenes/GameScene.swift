@@ -36,12 +36,16 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         physicsWorld.contactDelegate = self
         
-        // Add ScoreLabel
+        //MARK: Add ScoreLabel
         scoreNode.zPosition = 2
         scoreNode.position.x = 150
         scoreNode.position.y = 385
         addChild(scoreNode)
         score = 0
+        
+        //MARK: Load background audio
+        let backgroundMusic = SKAudioNode(fileNamed: "Go")
+        addChild(backgroundMusic)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event : UIEvent?) -> Void
