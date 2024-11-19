@@ -45,6 +45,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         
         //MARK: Load background audio
         let backgroundMusic = SKAudioNode(fileNamed: "Go")
+        backgroundMusic.name = "music"
         addChild(backgroundMusic)
     }
     
