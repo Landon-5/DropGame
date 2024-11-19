@@ -45,6 +45,9 @@ class EndGameScene : SKScene
         addChild(scoreNode)
         addChild(endNode)
         addChild(restartNode)
+        
+        let pinchRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch))
+        self.view?.addGestureRecognizer(pinchRecognizer)
     }
     
     private func restart () -> Void
