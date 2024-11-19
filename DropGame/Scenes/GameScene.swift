@@ -83,6 +83,11 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         return colors[randomIndex]
     }
     
+    private func endGame() -> Void
+    {
+        
+    }
+    
     //MARK: -- Collision Handling Methods
     
     /// This func adds 0.5 to the score every time it is run and it also removes a node
