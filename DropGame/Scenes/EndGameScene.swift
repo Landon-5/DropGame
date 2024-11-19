@@ -24,7 +24,7 @@ class EndGameScene : SKScene
         scoreNode.zPosition = 2
         scoreNode.position.x = frame.midX
         scoreNode.position.y = frame.midY + 30
-        scoreNode.text = "Score: \(score)"
+        scoreNode.text = "Score: \(Int(score))"
         
         let endNode = SKLabelNode(fontNamed: "Copperplate-Bold")
         endNode.fontSize = 25
