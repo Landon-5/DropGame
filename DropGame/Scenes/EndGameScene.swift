@@ -46,4 +46,14 @@ class EndGameScene : SKScene
         addChild(endNode)
         addChild(restartNode)
     }
+    
+    private func restart () -> Void
+    {
+        let transition = SKTransition.fade(with: .purple, duration: 15)
+        let restartScene = GameScene()
+        restartScene.size = CGSize(width: 300, height: 500)
+        restartScene.scaleMode = .fill
+        
+        self.view?.presentScene(restartScene, transition: transition)
+    }
 }
