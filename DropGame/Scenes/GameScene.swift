@@ -131,4 +131,17 @@ class GameScene : SKScene, SKPhysicsContactDelegate
             explosion.run(explosiveSequence)
         }
     }
+    
+    private func updateSound() -> Void
+    {
+        if let sound = childNode(withName: "music")
+        {
+            let speedUp = SKAction.changePlaybackRate(by: 1.5, duration: 10)
+            let waitTime = SKAction.wait(forDuration: 5)
+            let resetSpeed = SKAction.changePlaybackRate(to: 1, duration: 10)
+            let speedSequence = SKAction.sequence([speedUp, waitTime, resetSpeed])
+            
+            sound.run(speedSequence)
+        }
+    }
 }
