@@ -98,6 +98,11 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         score += 0.5
         explosionEffect(at: deadNode.position)
         deadNode.removeFromParent()
+        
+        if (score > 100)
+        {
+            endGame()
+        }
     }
     
     private func collisionBetween(_ nodeOne : SKNode, and nodeTwo : SKNode)
