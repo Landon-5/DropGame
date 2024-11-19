@@ -85,6 +85,13 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     
     private func endGame() -> Void
     {
+        let transition = SKTransition.fade(with: .green, duration: 6)
+        let endScene = EndGameScene()
+        endScene.score = score
+        endScene.size = CGSize(width: 300, height: 500)
+        endScene.scaleMode = .fill
+        
+        self.view?.presentScene(endScene, transition: transition)
         
     }
     

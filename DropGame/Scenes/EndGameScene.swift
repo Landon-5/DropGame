@@ -10,7 +10,7 @@ import SpriteKit
 
 class EndGameScene : SKScene
 {
-    var score : Int = 0
+    var score : Double = 0.0
     
     //MARK: - Overriden Method
     
