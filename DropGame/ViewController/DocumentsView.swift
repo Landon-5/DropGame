@@ -11,11 +11,12 @@ struct DocumentsView: View
 {
     var body: some View 
     {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink("Game Dev Q", destination: CustomPDFView(displayedPDFURL: gameWork))
+        NavigationLink()
     }
 }
 
-#Preview 
+#Preview ("Load all documents")
 {
     DocumentsView()
 }

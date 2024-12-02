@@ -18,6 +18,8 @@
 		555384682CED14C500E23A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555384662CED14C500E23A62 /* Assets.xcassets */; };
 		55D058B92CFE36BF00FB0E7A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D058B82CFE36BF00FB0E7A /* MainView.swift */; };
 		55D058BB2CFE371F00FB0E7A /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D058BA2CFE371F00FB0E7A /* DocumentsView.swift */; };
+		55D058BD2CFE37EE00FB0E7A /* CustomPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D058BC2CFE37EE00FB0E7A /* CustomPDFView.swift */; };
+		55D058BF2CFE3D3800FB0E7A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D058BE2CFE3D3800FB0E7A /* Utilities.swift */; };
 		55E5EFCA2CED1756004E667C /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFC92CED1756004E667C /* SparkParticle.sks */; };
 		55E5EFCF2CED1A76004E667C /* drop bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFCE2CED1A76004E667C /* drop bass.wav */; };
 		55E5EFD12CED1A81004E667C /* Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFD02CED1A81004E667C /* Go.mp3 */; };
@@ -56,6 +58,8 @@
 		555384662CED14C500E23A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55D058B82CFE36BF00FB0E7A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		55D058BA2CFE371F00FB0E7A /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
+		55D058BC2CFE37EE00FB0E7A /* CustomPDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
+		55D058BE2CFE3D3800FB0E7A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		55E5EFC92CED1756004E667C /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
 		55E5EFCE2CED1A76004E667C /* drop bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drop bass.wav"; sourceTree = "<group>"; };
 		55E5EFD02CED1A81004E667C /* Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Go.mp3; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				55E5EFCB2CED1A4A004E667C /* Sounds */,
 				554F93B12CE29D23007E9367 /* DropGameApp.swift */,
 				554F93B52CE29D23007E9367 /* Assets.xcassets */,
+				55D058BE2CFE3D3800FB0E7A /* Utilities.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 		554F93DC2CE2A0D4007E9367 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				55D058BC2CFE37EE00FB0E7A /* CustomPDFView.swift */,
 				554F93B32CE29D23007E9367 /* DropGameView.swift */,
 				55D058B82CFE36BF00FB0E7A /* MainView.swift */,
 				55D058BA2CFE371F00FB0E7A /* DocumentsView.swift */,
@@ -345,7 +351,9 @@
 				554F93E22CE2A363007E9367 /* GameScene.swift in Sources */,
 				554F93B42CE29D23007E9367 /* DropGameView.swift in Sources */,
 				55D058BB2CFE371F00FB0E7A /* DocumentsView.swift in Sources */,
+				55D058BD2CFE37EE00FB0E7A /* CustomPDFView.swift in Sources */,
 				55D058B92CFE36BF00FB0E7A /* MainView.swift in Sources */,
+				55D058BF2CFE3D3800FB0E7A /* Utilities.swift in Sources */,
 				554F93B22CE29D23007E9367 /* DropGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

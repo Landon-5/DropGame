@@ -26,19 +26,9 @@ struct DropGameView: View
     
     var body: some View
     {
-        NavigationStack
-        {
-            VStack
-            {
                 SpriteView(scene: simpleGameScene)
                     .frame(width: width, height: height)
                     .edgesIgnoringSafeArea(.all)
-                Section("Documents", isExpanded: $canShowDocuments)
-                {
-                    
-                }
-            }
-        }
     }
 }
 
