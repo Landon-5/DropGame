@@ -16,6 +16,7 @@
 		554F93CF2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93CE2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift */; };
 		554F93E22CE2A363007E9367 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F93E12CE2A363007E9367 /* GameScene.swift */; };
 		555384682CED14C500E23A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555384662CED14C500E23A62 /* Assets.xcassets */; };
+		55D058B92CFE36BF00FB0E7A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D058B82CFE36BF00FB0E7A /* MainView.swift */; };
 		55E5EFCA2CED1756004E667C /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFC92CED1756004E667C /* SparkParticle.sks */; };
 		55E5EFCF2CED1A76004E667C /* drop bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFCE2CED1A76004E667C /* drop bass.wav */; };
 		55E5EFD12CED1A81004E667C /* Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55E5EFD02CED1A81004E667C /* Go.mp3 */; };
@@ -52,6 +53,7 @@
 		554F93CE2CE29D23007E9367 /* DropGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		554F93E12CE2A363007E9367 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		555384662CED14C500E23A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55D058B82CFE36BF00FB0E7A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		55E5EFC92CED1756004E667C /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
 		55E5EFCE2CED1A76004E667C /* drop bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drop bass.wav"; sourceTree = "<group>"; };
 		55E5EFD02CED1A81004E667C /* Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Go.mp3; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				554F93B32CE29D23007E9367 /* DropGameView.swift */,
+				55D058B82CFE36BF00FB0E7A /* MainView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				55E5EFD32CED2143004E667C /* EndGameScene.swift in Sources */,
 				554F93E22CE2A363007E9367 /* GameScene.swift in Sources */,
 				554F93B42CE29D23007E9367 /* DropGameView.swift in Sources */,
+				55D058B92CFE36BF00FB0E7A /* MainView.swift in Sources */,
 				554F93B22CE29D23007E9367 /* DropGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
