@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let gameWork : URL = Bundle.main.url(forResource: "", withExtension: "pdf")!
