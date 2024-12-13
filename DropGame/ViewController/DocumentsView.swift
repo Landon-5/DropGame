@@ -12,7 +12,6 @@ struct DocumentsView: View
     var body: some View 
     {
         NavigationLink("Game Dev Q", destination: CustomPDFView(displayedPDFURL: gameWork))
-        NavigationLink()
     }
 }
 
